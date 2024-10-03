@@ -1,11 +1,23 @@
-import Logo from "./Logo"
+import Logo from "./NavbarComponents/Logo"
 import logo_img from "../assets/logo.svg"
-import Navigation from "./Navigation"
+import Navigation from "./NavbarComponents/Navigation"
 import navigateData from "../JsonData/Navigation.json"
-import Search from "./Search"
-import Cart from "./Cart"
+import Search from "./NavbarComponents/Search"
+import Cart from "./NavbarComponents/Cart"
+import { ChangeEvent, useState } from "react"
+
+
 
 const Navbar = () => {
+  //Search Handle Events
+  const [search, setSearch] = useState<string>("");
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) =>{
+    setSearch(e.target.value);
+    console.log(e);
+  }
+  //End
+  
   return (
     <nav id="head-navbar" className="flex flex-row justify-around items-center shadow-sm w-full">
         <div className="left-side flex gap-8 items-center p-3 ">
@@ -13,7 +25,7 @@ const Navbar = () => {
             <Navigation items={navigateData}/>
         </div>
         <div className="righ-side flex flex-row items-center gap-8 p-3 text-center">
-            <Search/>
+            <Search handleChange={handleChange} search={search}/>
             <Cart/>
         </div>
     </nav>
