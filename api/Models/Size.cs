@@ -10,15 +10,10 @@ namespace api.Models
     public class Size
     {
         //Properties
-        [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        private int sizeId;
-        private string sizeValue = string.Empty;
-        private List<Product_size> products = [];
-
-        //Get - Set
-        public int SizeId { get => sizeId; set => sizeId = value; }
-        public string SizeValue { get => sizeValue; set => sizeValue = value; }
-        public List<Product_size> Products { get => products; set => products = value; }
+        public int SizeId { get; set; }
+        public string? SizeValue { get; set; }
+        public List<Product>? Products { get; set; }
+        public List<Product_size>? Product_Sizes { get; set; }
     }
 }

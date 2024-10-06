@@ -10,17 +10,9 @@ namespace api.Models
     public class Product_color
     {
         //Properties
-        private int colorId;
-        private int productId;
-        private Color color = new();
-        private Product product = new();
-        
-        //Get - Set
-        public int ColorId { get => colorId; set => colorId = value; }
-        public int ProductId { get => productId; set => productId = value; }
-        public Color Color { get => color; set => color = value; }        
-        public Product Product { get => product; set => product = value; }
-        
-
+        public int ColorId {get; set;}
+        public Color? Color {get; set;}
+        public int ProductId {get; set;}
+        public Product? Product {get; set;}
     }
 }

@@ -9,18 +9,12 @@ namespace api.Models
 {
     public class Category
     {
-        //Properties
         [Key]
+        //Properties
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        private int categoryIdid;
-        private string name = string.Empty;
-        private string description = string.Empty;
-        private List<Product> products = [];
-
-        //Get - Set
-        public int CategoryIdid { get => categoryIdid; set => categoryIdid = value; }
-        public string Name { get => name; set => name = value; }
-        public string Description { get => description; set => description = value; }
-        public List<Product> Products { get => products; set => products = value; }
+        public int CategoryId {get; set;}
+        public string? Name {get; set;}
+        public string? Description {get; set;}
+        public List<Product>? Products {get; set;}
     }
 }

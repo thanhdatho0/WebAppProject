@@ -12,12 +12,9 @@ namespace api.Models
         //Properties
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        private int materialId;
-        private string materialType = string.Empty;
-        private List<Product_material> products = [];
-
-        public int MaterialId { get => materialId; set => materialId = value; }
-        public string MaterialType { get => materialType; set => materialType = value; }
-        public List<Product_material> Products { get => products; set => products = value; }
+        public int MaterialId { get; set; }
+        public string? MaterialType { get; set; }
+        public List<Product>? Products { get; set; }
+        public List<Product_material>? Product_Materials { get; set; }
     }
 }

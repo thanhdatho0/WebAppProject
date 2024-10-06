@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\repo\\WebAppProject\\api\\api.csproj": {}
+    "D:\\WebProject\\WebAppProject\\api\\api.csproj": {}
   },
   "projects": {
-    "D:\\repo\\WebAppProject\\api\\api.csproj": {
+    "D:\\WebProject\\WebAppProject\\api\\api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repo\\WebAppProject\\api\\api.csproj",
+        "projectUniqueName": "D:\\WebProject\\WebAppProject\\api\\api.csproj",
         "projectName": "api",
-        "projectPath": "D:\\repo\\WebAppProject\\api\\api.csproj",
+        "projectPath": "D:\\WebProject\\WebAppProject\\api\\api.csproj",
         "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
-        "outputPath": "D:\\repo\\WebAppProject\\api\\obj\\",
+        "outputPath": "D:\\WebProject\\WebAppProject\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\thanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,7 +58,19 @@
               "target": "Package",
               "version": "[8.0.8, )"
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.8, )"
             },

@@ -1,46 +1,15 @@
+using Microsoft.Net.Http.Headers;
+
 namespace api.Models
 {
     public class Person
     {
-        private string firstName = string.Empty;
-        private string lastName = string.Empty;
-        private bool male;
-        private string phoneNumber = string.Empty;
-        private string address = string.Empty;
-        private DateTime dateOfBirth;
-
-        public string FirstName
-        {
-            get { return firstName; }
-            set { firstName = value; }
-        }
-        
-        public string LastName
-        {
-            get { return lastName; }
-            set { lastName = value; }
-        }
-        public bool Male
-        {
-            get { return male; }
-            set { male = value; }
-        }
-        public string PhoneNumber
-        {
-            get { return phoneNumber; }
-            set { phoneNumber = value; }
-        }
-        public string Address
-        {
-            get { return address; }
-            set { address = value; }
-        }
-        public DateTime DateOfBirth
-        {
-            get { return dateOfBirth; }
-            set { dateOfBirth = value; }
-        }
-
-        
+        public string? FirstName {get; set;}
+        public string? LastName {get; set;}
+        public bool Male {get; set;}
+        public string? PhoneNumber {get; set;}
+        public string? Address {get; set;}
+        public DateTime DateOfBirth {get; set;}
+        public string FullName { get => FirstName + " " + LastName;}
     }
 }

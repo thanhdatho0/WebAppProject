@@ -10,16 +10,9 @@ namespace api.Models
 {
     public class Product_size
     {
-        //Properties
-        private int sizeId;
-        private Size size = new();
-        private int productId;
-        private Product product = new();
-        
-        //Get - Set
-        public int SizeId { get => sizeId; set => sizeId = value; }
-        public Size Size { get => size; set => size = value; }        
-        public int ProductId { get => productId; set => productId = value; }
-        public Product Product { get => product; set => product = value; }
+        public int SizeId { get; set; }
+        public Size? Size { get; set; }
+        public int ProductId { get; set; }
+        public Product? Product { get; set; }
     }
 }

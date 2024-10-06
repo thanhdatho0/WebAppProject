@@ -9,19 +9,13 @@ namespace api.Models
 {
     public class Color
     {
-        //Properties
         [Key]
+        //Properties
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        private int colorId;
-        private string hexaCode = string.Empty;
-        private string name = string.Empty;
-        private List<Product_color> products = [];
-        
-        //Get - Set
-        public int ColorId { get => colorId; set => colorId = value; }
-        public string HexaCode { get => hexaCode; set => hexaCode = value; }
-        public string Name { get => name; set => name = value; }
-        public List<Product_color> Products { get => products; set => products = value; }
-
+        public int ColorId { get; set; }
+        public string? HexaCode { get; set; }
+        public string? Name { get; set; }
+        public List<Product>? Products { get; set; }
+        public List<Product_color>? Product_Colors { get; set; }
     }
 }

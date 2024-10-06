@@ -12,15 +12,10 @@ namespace api.Models
         //Properties
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        private int imageId;
-        private string url = string.Empty;
-        private string alt = string.Empty;
-        private List<Product_image> products = [];
-
-        //Get - Set
-        public int ImageId { get => imageId; set => imageId = value; }
-        public string Url { get => url; set=> url = value; }
-        public string Alt { get => alt; set=> alt = value; }
-        public List<Product_image> Products { get => products; set => products = value; }
+        public int ImageId {get; set;}
+        public string? Url {get; set;}
+        public string? Alt {get; set;}
+        public List<Product>? Products { get; set; }
+        public List<Product_image>? Product_Imagescts {get; set;}
     }
 }
