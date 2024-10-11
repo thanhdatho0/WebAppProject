@@ -1,13 +1,15 @@
-import Footer from "./Components/Footer"
-import Navbar from "./Components/Navbar"
+import Body from "./Components/Body";
+import Footer from "./Components/Footer";
+import Navbar from "./Components/Navbar";
 
 const App = () => {
   return (
     <>
-      <Navbar/>
-      <Footer/>
+      <Navbar />
+      <Body />
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

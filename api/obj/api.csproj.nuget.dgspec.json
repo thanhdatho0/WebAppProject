@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\WebProject\\webAppProject\\api\\api.csproj": {}
+    "D:\\WebProject\\WebAppProject\\api\\api.csproj": {}
   },
   "projects": {
-    "D:\\WebProject\\webAppProject\\api\\api.csproj": {
+    "D:\\WebProject\\WebAppProject\\api\\api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\WebProject\\webAppProject\\api\\api.csproj",
+        "projectUniqueName": "D:\\WebProject\\WebAppProject\\api\\api.csproj",
         "projectName": "api",
-        "projectPath": "D:\\WebProject\\webAppProject\\api\\api.csproj",
+        "projectPath": "D:\\WebProject\\WebAppProject\\api\\api.csproj",
         "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
-        "outputPath": "D:\\WebProject\\webAppProject\\api\\obj\\",
+        "outputPath": "D:\\WebProject\\WebAppProject\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\thanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
