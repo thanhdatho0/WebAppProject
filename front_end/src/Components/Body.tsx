@@ -1,5 +1,11 @@
+import Slider from "./Slider";
+
 const Body = () => {
-  return <div className="h-80">Body</div>;
+  return (
+    <div className="">
+      <Slider />
+    </div>
+  );
 };
 
 export default Body;
